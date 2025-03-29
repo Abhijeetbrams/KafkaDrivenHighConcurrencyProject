@@ -1,5 +1,5 @@
 
-package com.ecommerce.kafkahighconcurrencyproject.security.consumer;
+package com.ecommerce.kafkahighconcurrencyproject.service.consumer;
 
 import com.ecommerce.kafkahighconcurrencyproject.config.ConfigProperty;
 import lombok.extern.log4j.Log4j2;
