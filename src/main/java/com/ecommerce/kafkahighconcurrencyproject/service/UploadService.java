@@ -1,15 +1,9 @@
-package co.fareye.service;
+package com.ecommerce.kafkahighconcurrencyproject.service;
 
-import co.fareye.config.ConfigProperty;
-import co.fareye.config.security.GatewayUser;
-import co.fareye.constant.AppConstant;
-import co.fareye.dao.EkartMasterDao;
-import co.fareye.dto.ProcessData;
-import co.fareye.dto.fileupload.DirectoryAndFileExtension;
-import co.fareye.dto.fileupload.FileDetail;
-import co.fareye.dto.fileupload.FileDownloadConfiguration;
-import co.fareye.dto.fileupload.FileHandlingProtocolAuth;
-import co.fareye.model.EkartMaster;
+import com.ecommerce.kafkahighconcurrencyproject.config.ConfigProperty;
+import com.ecommerce.kafkahighconcurrencyproject.dao.EkartMasterDao;
+import com.ecommerce.kafkahighconcurrencyproject.dto.ProcessData;
+import com.ecommerce.kafkahighconcurrencyproject.model.EkartMaster;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.JsonToken;
@@ -24,7 +18,6 @@ import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
