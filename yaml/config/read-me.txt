@@ -1,0 +1,1 @@
+All the configuration files and secrets files should be added in this folder having .yaml as extension. Other files should not have .yaml
